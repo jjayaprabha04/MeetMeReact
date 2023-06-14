@@ -1,0 +1,181 @@
+@font-face
+{
+    font-family: 'Prabha';
+    src: url('../public/Font/FontsFree-Net-France.ttf');
+}
+
+*{
+    font-family: 'Lilita One', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    /*font-family: 'Roboto Slab', serif; */               
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+body
+{ 
+    background-color: rgb(14, 14, 15);
+}  
+
+#layout
+{
+    width:90%;
+    margin: auto;
+}
+img
+{
+    max-width: 100%;
+}
+
+.row1, .row2, .row3II,.row4, .row5, .row6, .row2div, .row3III, .Exp,.Edn
+{
+    display: flex;                
+    flex-wrap: wrap;                
+} 
+.row1,.row6
+{
+    padding: 20px;
+    background-color: rgba(120, 114, 114, 0.648);                
+    justify-content:center;               
+}  
+.row6
+{
+    flex-direction: column;
+    align-items: center;
+}                   
+
+.row2
+{
+    padding: 50px;                                         
+    background-color: aliceblue;               
+    justify-content:center;
+    align-content: space-evenly;
+}
+.row2 div, .row2 strong
+{
+    width:30%;               
+    color: rgb(66, 63, 63);                
+    margin: 10px;
+    padding: 20px;
+    
+}
+.row2div div
+{                     
+    padding: 10px;
+    width:100px;       
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    font-weight:normal;
+    color: rgb(82, 78, 78);
+}
+
+#row2divdiv2
+{
+    font-family:'Prabha';        
+}
+
+#glow
+{
+    text-shadow: -4px -4px 4px ivory;
+    box-shadow: -3px 0px 20px 4px rgb(207 208 208);
+}
+
+p::first-line
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgb(80, 77, 77);
+}
+.row2div input
+{
+    width:100px;
+    height: 30px;
+    border:0;                
+}
+
+#button1
+{
+    background-color: rgb(0, 225, 255);
+}
+
+#button2
+{
+    background-color: rgba(255, 0, 0, 0.696);
+}
+
+.row3I, .row3II, .row3III
+{
+    background-color:rgb(179, 184, 194);
+    color: rgba(0, 0, 0, 0.622);
+    padding:10px;
+}
+.row3I
+{
+    justify-content: center;
+}
+.row3II, .row3III
+{
+    justify-content: space-evenly;
+}
+.row3II div
+{
+    justify-content: center;
+    text-align: center;
+    width:20%;
+    height:200px;
+    margin:20px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: rgb(150, 147, 147);               
+
+}
+.row3III div
+{
+    justify-content: center;
+    margin:20px;                    
+}
+.row4
+{
+    justify-content:space-around;
+    background-color: aliceblue;
+    padding:20px;
+    max-height: fit-content;
+    
+}
+.column1,.column2
+{
+    width: 50%;
+    
+}
+.Edn,.Exp
+{
+    flex-direction: column;                
+}
+.Edn strong,.Exp strong
+{
+    color: rgb(150, 147, 147);                
+}
+
+.Edn div,.Exp div
+{
+    width: 500px;
+    height: 100px;
+    margin :20px;
+    padding:20px;
+    color: rgb(150, 147, 147);             
+}
+.row4I
+{
+    padding:0 20px;
+}
+@media only screen and (max-width: 576px)
+ {
+    .row2 div, .row3II div, .Edn div, .Exp div
+    {
+        width: 100%;
+    }
+    .Edn, .Exp
+    {
+        align-items: left;
+    }
+ }
