@@ -28,7 +28,7 @@ img
     max-width: 100%;
 }
 
-.row1, .row2, .row3II,.row4, .row5, .row6, .row2div, .row3III, .Exp,.Edn
+.row1, .row2, .row3II,.row4, .row5, .row6, .row3III, .Exp,.Edn,.Bio
 {
     display: flex;                
     flex-wrap: wrap;                
@@ -54,22 +54,23 @@ img
 }
 .row2 div, .row2 strong
 {
-    width:30%;               
+    width:35%;               
     color: rgb(66, 63, 63);                
     margin: 10px;
     padding: 20px;
     
 }
-.row2div div
+
+.Bio div
 {                     
-    padding: 10px;
-    width:100px;       
+     
+    width:10px;      
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
     font-weight:normal;
     color: rgb(82, 78, 78);
 }
 
-#row2divdiv2
+#Bio
 {
     font-family:'Prabha';        
 }
@@ -86,11 +87,19 @@ p::first-line
     font-weight: bolder;
     color: rgb(80, 77, 77);
 }
-.row2div input
+.row2div input, #button3
 {
     width:100px;
     height: 30px;
     border:0;                
+}
+.row2 >div> img
+{
+    width: 100%;
+    height: 50vh;
+    justify-items: center;
+    align-items: center;
+
 }
 
 #button1
@@ -101,6 +110,10 @@ p::first-line
 #button2
 {
     background-color: rgba(255, 0, 0, 0.696);
+}
+#button3
+{
+    background-color: rgba(18, 214, 41, 0.696);
 }
 
 .row3I, .row3II, .row3III
